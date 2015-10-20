@@ -1,6 +1,11 @@
 module Tablo
 
-using Requests
+using Requests: get,json
+export
+    chanids,
+    chinfo,
+    recids,
+    recinfo
 
 const TabloIP = "192.168.0.101"
 include("Tablo_h.jl")
